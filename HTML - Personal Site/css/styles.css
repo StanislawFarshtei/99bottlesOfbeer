@@ -1,0 +1,31 @@
+body {
+  background-color: #98ACF8;
+}
+
+h1 {
+  color: #BEDCFA;
+}
+
+h3 {
+  color: #BEDCFA;
+}
+
+hr {
+  border-style: dotted none none;
+  height: 10px;
+  width: 5%;
+  border-color: gray;
+  border-width: 5px;
+}
+
+img {
+  border-radius: 75%;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 5px;
+  width: 150px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
