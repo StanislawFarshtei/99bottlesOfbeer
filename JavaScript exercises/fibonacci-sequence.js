@@ -18,6 +18,6 @@ function fibonacciGenerator (n) {
 
     return output;
 }
-const result = fibonacciGenerator(10);
+const result = fibonacciGenerator(200);
 
 console.log(result);
