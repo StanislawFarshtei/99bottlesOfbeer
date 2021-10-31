@@ -42,7 +42,7 @@ const makeSound = function(key) {
     }
 };
 
-// Detecting Button Press
+// Detecting Mouse Button Press === click
 
 const numberOfDrumItems = document.querySelectorAll(".drum").length;
 
@@ -51,9 +51,20 @@ for (let i = 0; i < numberOfDrumItems; i++ ) {
 
         let buttonInnerHTML = this.innerHTML;
         makeSound(buttonInnerHTML);
+        buttonAnimation(buttonInnerHTML);
     });
 }
 
 document.addEventListener("keydown", function (event) {
     makeSound(event.key);
+    buttonAnimation(event.key);
 });
+
+const buttonAnimation = function (currentKey) {
+    let activeButton = document.querySelector(`.${currentKey}`);
+    activeButton.classList.add("pressed");
+
+    setTimeout(function () {
+        activeButton.classList.remove("pressed");
+    }, 100);
+};

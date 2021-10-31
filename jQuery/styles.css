@@ -1,0 +1,10 @@
+* {
+    background: #4ECCA3;
+}
+
+.big-title {
+    font-size: 5rem;
+    color: #337FED;
+    font-family: "Comic Sans MS";
+    padding: 20px;
+}
